@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Galentine ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff5f8f, #ff9a9e);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.names {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.heart {
+    font-size: 90px;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.card {
+    background: rgba(255,255,255,0.25);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+a.button {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: white;
+    color: #ff4d6d;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="heart">❤️</div>
+
+<h1>Happy Galentine’s Day</h1>
+
+<div class="names">
+  My Hottest Baby Girl This is only for You.👀💋
+</div>
+
+<div class="card">
+  May God bless you with the love you deserve and ever dreamed in your life my prettiest women in the entire world... 💞
+</div>
+
+<div class="card">
+    Our friendship is   
+    <h2 id="daysTogether"></h2>
+    and I wish to counting till the end. 💖
+</div>
+
+<a href="galentine.html" class="button">
+    Here's Something Special For You baby girl. 💌
+</a>
+
+</div>
+
+<script>
+const startDate = new Date("2022-07-1"); // CHANGE CONFESSION DATE
+const today = new Date();
+
+const diffTime = today - startDate;
+const days = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+document.getElementById("daysTogether").innerText = days + " Days Older❤️";
+</script>
+
+</body>
+</html>
